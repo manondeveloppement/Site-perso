@@ -118,3 +118,6 @@ h4{
 .card-title{
     text-align: center;
 }
+.card{
+    margin: 50px;
+}
