@@ -29,7 +29,6 @@ footer{
 .navbar-nav {
     text-align: center; /* Centre le texte */
 }
-
 .nav-item {
     display: inline-block; /* Pour que les éléments s'affichent sur la même ligne */
     margin: 0 auto; /* Centre les éléments */
