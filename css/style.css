@@ -1,9 +1,14 @@
 body{
     font-family: Arima;
-    background: linear-gradient(to right, white, rgba(154, 93, 224, 0.20)); /* Dégradé de blanc à violet avec opacité */
+    background: linear-gradient(to right, white, rgba(154, 93, 224, 0.40)); /* Dégradé de blanc à violet avec opacité */
+}
+header{
+    background-color: #8ff5f5 !important;
+}
+footer{
+    background-color: #8ff5f5;
 }
 .navbar{
-    background-color: #2bfafa;/*couleur de la barre*/
     height: 100px;
 }
 .navbar-brand img{
@@ -13,22 +18,33 @@ body{
 }
 .navbar-nav .nav-link{
     color:#000000 ;/*couleur des liens*/
-    font-weight: 950;
+    font-size: 1.2em;
 }
 .navbar-nav .nav-link:hover{
     color:#ff00ff; /*couleur au survol*/
 }
+.navbar-collapse{
+    background-color: rgb(143, 245, 245, 0.50);
+}
 .btn-custom{
     background-color: #ff00ff; /*couleur du bouton*/
     color: #f9ecec;
+    font-size: 1.2em;
+}
+.btn-custom i{
+line-height: 1.2em !important;
+vertical-align: bottom;
+}
+.bi::before{
+    line-height: 1.2em !important;
 }
 .btn-custom:hover{
     background-color: #e65de6;
 }
-.container-fluid{
-    background-color:#bae9f9 ;/*couleur de fond légère*/
-    padding: 10px;
-    border-radius: 10px;
+
+.container{
+    max-width: 1140px;
+    background-color:#a7daf5 ;
 }
 /*style pour le titre*/
 .title{
@@ -44,29 +60,17 @@ p{
     margin: 8px;
     padding: 10px;
 }
-.container-fluid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-    padding: 20px;
-    background-color: #bae9f9;
-}
-
 .card-custom {
     background-color: #fff;
     border: 1px solid #000000;
-    border-radius: 8px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
-    width: 200px;
     text-align: center;
     overflow: hidden;
     transition: transform 0.2s;
+    width: 200px !important;
 }
 
 .card-custom img {
-    width: 100%;
-    height: 200px; /* Fixe la hauteur de l'image */
     object-fit: cover; /* Assure que l'image garde son ratio */
 }
 
@@ -78,46 +82,34 @@ p{
 .card-custom:hover {
     transform: scale(1.05);
 }
-/* Media Queries */
-@media (max-width: 425px) {
+
+/* @media (max-width: 425px) {
     .card-custom {
-        flex: 0 1 100%; /* Pleine largeur sur très petits écrans */
+        flex: 0 1 100%; 
     }
 }
 
 @media (min-width: 426px) and (max-width: 768px) {
     .card-custom {
-        flex: 0 1 45%; /* Deux cartes par ligne */
+        flex: 0 1 45%; 
     }
 }
 
 @media (min-width: 769px) and (max-width: 1440px) {
     .card-custom {
-        flex: 0 1 30%; /* Trois cartes par ligne */
+        flex: 0 1 30%; 
     }
 }
 
 @media (min-width: 1441px) {
     .card-custom {
-        flex: 0 1 200px; /* Taille fixe pour écrans larges */
+        flex: 0 1 200px; 
     }
 }
-
-.title-card{
-    text-align: center;
-}
+ */
 h4{
-    text-align: center;
-    color: #000000;
     width: 100%;
 }
 .card-text{
     margin: 10px;
-    text-align: center;
-}
-.card-title{
-    text-align: center;
-}
-.card{
-    margin: 50px;
 }
