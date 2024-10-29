@@ -24,7 +24,15 @@ footer{
     color:#ff00ff; /*couleur au survol*/
 }
 .navbar-collapse{
-    background-color: rgb(143, 245, 245, 0.50);
+    background-color: rgb(143, 245, 245, 0.80);
+}
+.navbar-nav {
+    text-align: center; /* Centre le texte */
+}
+
+.nav-item {
+    display: inline-block; /* Pour que les éléments s'affichent sur la même ligne */
+    margin: 0 auto; /* Centre les éléments */
 }
 .btn-custom{
     background-color: #ff00ff; /*couleur du bouton*/
